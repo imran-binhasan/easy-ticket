@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Ticket Ltd</title>
+    <!-- Link Favicon -->
+     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!--Link Vania CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Tailwind CSS & Daisy UI Components -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>    
+    <!-- Link Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Link JS -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="w-full md:w-11/12 lg:w-4/5 mx-auto border">
+        <!-- Navbar -->
+    <div class="navbar bg-base-100 border">
+
+        <div id="nav-toggle" class="navbar-start">
+            <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-7 w-7 mx-1 md:hidden"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+        
+            <h2 class="text-teal-500 font-semibold text-2xl">easyTicket</h2>
+        </div>
+
+
+        <div class="navbar-center">
+            <ul class="hidden md:flex md:flex-row gap-3">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Destination</a></li>
+                <li><a href="">Search</a></li>
+            </ul>
+        </div>
+
+
+        <div class="navbar-end">
+            <button class="bg-gray-50 p-2 rounded-lg border">Bus <img class="inline" src="images/bus-icon.png" ></button>
+        </div>
+    </div>
+    <!--Small Screen Dropdown links -->
+    <ul class="px-4 flex flex-col gap-1 md:hidden">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Search</a></li>
+    </ul>
+    <!-- Banner Section -->
+     <div class="flex flex-col items-center rounded-lg bg-[url('images/banner.png')] bg-cover bg-center h-96 p-10 lg:px-12 lg:pt-20 gap-4 relative">
+        <h1 class="text-4xl text-center font-semibold text-white">End to End Travel with <br><span class="text-teal-400 block mt-2">Easy Paribahan</span></h1>
+        <p class="text-center md:px-12 text-white">Yes, you can run unit tests and view the results directly within the app.The integrated <br> testing features allow for a streamlined ticket purchase</p>
+       <div>
+        <button class="btn bg-green-600">Buy Tickets</button>
+       </div>
+       <!-- Left Sticky -->
+       <div class="md:block absolute  -bottom-10 lg:left-60 left-32 hidden">
+        <div class="flex items-center p-3 border-b-2 border-green-400 shadow-lg rounded-xl bg-base-100">
+        <img src="images/people.png" class="w-12 p-1">
+        <div>
+         <h4 class="font-semibold font-sans text-2xl">500K+</h4>
+         <p class="text-sm">Registered users</p>
+        </div>
+        </div>
+       </div>
+        <!-- Middle Sticky -->
+       <div class="md:block absolute  -bottom-10 hidden">
+        <div class="flex items-center p-3 border-b-2 border-green-400 shadow-lg rounded-xl bg-base-100">
+        <img src="images/ticket-cupon.png" class="w-12 p-1">
+        <div>
+         <h4 class="font-semibold font-sans text-2xl">170K+</h4>
+         <p class="text-sm">Tickets sold</p>
+        </div>
+        </div>
+       </div>
+       <!-- Right Sticky -->
+       <div class="md:block absolute  -bottom-10 lg:right-60 right-32 hidden">
+        <div class="flex items-center p-3 border-b-2 border-green-400 shadow-lg rounded-xl bg-base-100">
+        <img src="images/stoppage.png" class="w-12 p-1">
+        <div>
+         <h4 class="font-semibold font-sans text-2xl">80K+</h4>
+         <p class="text-sm">Rental partners</p>
+        </div>
+        </div>
+       </div>
+     </div>
+     
+    </header>
+
+    <!-- Main Section -->
+     <main class="">
+        <!-- Offer section -->
+        <section class="my-20 w-full md:w-11/12 lg:w-4/5 mx-auto border">
+            <h3 class="text-center my-5 font-semibold text-2xl">Best offer for you</h3>
+            <div class="border flex lg:justify-center justify-between items-center flex-wrap flex-col md:flex-row gap-6 md:gap-1 lg:gap-10">
+                <!-- Card 1 -->
+                <div class="flex border p-8 md:p-6 lg:p-10  bg-orange-400 gap-2 md:gap-1 lg:gap-3 rounded-xl relative space-y-2 lg:space-y-14 lg:space-x-3 xl:space-x-16 md:space-x-0 space-x-3">
+                    <div class="space-y-1">
+                        <h4 class="font-semibold font-sans text-2xl">15% OFF</h4>
+                        <p class="font-medium">On your next purchase
+                        </p>
+                        <p>valid till January 2025</p>
+                    </div>
+                    <div>
+                        <span class="w-6 inline-block bg-white h-6 rounded-full absolute -top-3 -ml-3"></span>
+
+                        <span class="border-r-4 border-dotted h-full  inline-block -ml-1"></span>
+
+                        <span class="w-6 inline-block bg-white h-6 rounded-full absolute -bottom-3 -ml-3"></span>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold  text-2xl">NEW15</h4>
+                        <p class="text-sm">Coupon code
+                        </p>
+                    </div>
+
+                </div>
+                <!-- Card 2 -->
+                <div class="flex border p-8 md:p-6 lg:p-10 bg-pink-400 gap-2 md:gap-1 lg:gap-3 rounded-xl relative space-y-2 lg:space-y-14 lg:space-x-3 xl:space-x-16 md:space-x-0 space-x-3">
+                    <div class="space-y-1">
+                        <h4 class="font-semibold font-sans text-2xl">20% OFF</h4>
+                        <p class="font-medium">On your next purchase
+                        </p>
+                        <p>valid till January 2025</p>
+                    </div>
+                    <div>
+                        <span class="w-6 inline-block bg-white h-6 rounded-full absolute -top-3 -ml-3"></span>
+
+                        <span class="border-r-4 border-dotted h-full  inline-block -ml-1"></span>
+
+                        <span class="w-6 inline-block bg-white h-6 rounded-full absolute -bottom-3 -ml-3"></span>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold  text-2xl">COUPLE20</h4>
+                        <p class="text-sm">Coupon code
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-center my-5">
+                <button class="btn">See All Offers</button>
+            </div>
+
+        </section>
+        
+        <!-- Ticket Purchase Section -->
+         <section class="border rounded-lg h-[600px] bg-slate-200">
+            <!-- Title -->
+            <div class="my-10">
+                <h3 class="text-center my-5 font-semibold text-2xl">Easy Paribahan</h3>
+                <p class="text-center md:px-12">Yes, you can run unit tests and view the results directly within the app.The integrated <br> testing features allow for a streamlined ticket purchase</p>
+            </div>
+
+            <!-- Select Route -->
+         <div class="w-4/5 mx-auto flex border  bg-zinc-50  rounded-xl relative   border-red-400">
+            <div class="space-y-1 flex-1">
+                <div class="p-8">
+                    <!-- div upper -->
+                    <div class="flex justify-between items-center ">
+                        <!-- div left -->
+                        <div class="flex justify-center gap-2 items-center">
+                            <img class="h-8" src="images/bus-logo.png">
+                             <h4 class="font-bold text-lg">Greenline Paribahan <br>
+                            <span class="font-normal text-sm">Coach-009-WEB | AC_Business</span></h4>
+                        </div>
+                        <!-- div right -->
+                         <div>
+                            <span class="bg-green-200  p-2 rounded-lg">
+                                <img src="images/seat-green.png" class="inline ">
+                                <span class="text-green-700">40 Seats left</span>
+                            </span>
+                         </div>
+                    </div>
+                    <!-- div lower -->
+                    <div class="flex flex-col border p-4 space-y-1 bg-zinc-100 rounded-xl gap-4 mt-4">
+                        <div class="flex justify-between">
+                            <p>Route</p>
+                            <p>Jamalpur - Bogura</p>
+                        </div>
+                        <div class="border-t border-dashed border-gray-400 justify-between"></div>
+                        <div class="flex justify-between">
+                            <p>Departure Time</p>
+                            <p>9.00 PM</p>
+                        </div>
+                        <div class="border-t border-dashed border-gray-400 justify-between"></div>
+                        <div class="flex justify-between text-sm ">
+                            <div class="bg-gray-200 border rounded-lg p-2">
+                                Boarding Point - Tangail 
+                            </div>
+                            <div class="bg-gray-200 border rounded-lg p-2">
+                                Boarding Point - Sirajganj
+                            </div>
+                            <div class="bg-gray-200 border rounded-lg p-2">
+                                Est.Time - 11 Hour
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div>
+                <span class="w-6 inline-block bg-slate-200 h-6 rounded-full absolute -top-3 -ml-3"></span>
+
+                <span class="border-r-4 border-dotted h-full  inline-block -ml-1"></span>
+
+                <span class="w-6 inline-block bg-slate-200 h-6 rounded-full absolute -bottom-3 -ml-3"></span>
+            </div>
+            <div class="w-1/5 flex justify-center items-center">
+               <div class="flex flex-col gap-1">
+                <img class="w-12" src="images/fare.png">
+                <h3 class="font-semibold font-sans text-xl">550 TK</h3>
+                <p>Per Seat</p>
+               </div>
+            </div>
+
+        </div>
+        <!-- Select Seat -->
+         
+         </section>
+     </main>
+
+      
+</body>
+</html>
